@@ -8,7 +8,8 @@ OAuth.registerService('eve', 2, null, function (query) {
     serviceData: _.extend(user, { accessToken: OAuth.sealSecret(accessToken) }),
     options: { 
       profile: { 
-        name: user.CharacterName 
+        name: user.CharacterName,
+        id: user.id
       } 
     }
   };
