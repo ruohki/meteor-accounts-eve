@@ -1,5 +1,5 @@
-# accounts-discord
+# accounts-eve
 
 ## Installation
 
-`meteor add lichthagel:accounts-discord`
+`meteor add ruohki:accounts-eve`
