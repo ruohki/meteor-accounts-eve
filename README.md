@@ -8,12 +8,10 @@ Up to date Meteor OAuth Package for EVE-Onlines SSO API
 Put this somewhere in your Servers code:
 
 ```javascript
-ServiceConfiguration.configurations.upsert({
-    service: 'eve',
-}, {
-    clientId: '<clientId>',
-    secret: '<clientSecret>'
-});
+ServiceConfiguration.configurations.upsert(
+    { service: 'eve' },
+    { $set: { clientId: '<clientId>', secret: '<clientSecret>' }}
+);
 ```
 You can obtain those at [https://developers.eveonline.com/](https://developers.eveonline.com/)
 
